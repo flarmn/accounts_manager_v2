@@ -140,3 +140,9 @@ function updateLabel(index, newLabelArr) {
 }
 </script>
 
+<style lang="css" scoped>
+.accounts-form{
+  width: 75%;
+  margin:auto;
+}
+</style>

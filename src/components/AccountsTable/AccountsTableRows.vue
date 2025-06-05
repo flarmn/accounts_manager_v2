@@ -203,7 +203,7 @@ export default {
 .account-card__cell-login {
   display: flex;
   column-gap: 12px;
-  flex-grow: 1;
+  xxflex-grow: 1;
 }
 
 .account-card__cell-main {
@@ -212,20 +212,39 @@ export default {
 
 .account-card__cell-login {
   min-width: 40%;
+
   position: relative;
 }
 
 .account-card__field {
   position: relative;
-  flex-grow: 1;
+  xxflex-grow: 1;
+  flex-shrink:1;
+  width: 100%;
 }
 
-.account-card__input {
+.account-card__cell-main .account-card__input, .account-card__cell-main .account-card__select {
+  width: 50%;
+  line-height: 28px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.account-card__cell-login {
+	display:flex;
+column-gap: 30px;
+}
+
+
+.account-card__cell-login .account-card__input, .account-card__cell-login .account-card__select {
   width: 100%;
   line-height: 28px;
   padding: 4px 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  flex-shrink: 0;
+
 }
 
 .account-card__input--invalid {
@@ -262,5 +281,6 @@ export default {
   background-size: contain;
   border: none;
   cursor: pointer;
+  margin-left: 20px;
 }
 </style>
