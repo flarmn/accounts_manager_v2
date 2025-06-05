@@ -19,14 +19,6 @@ export default {
 
     name: 'AccountsHeader',
       emits: ['add'],
-
-    /*
-    methods:{
-      handleClick(){
-         
-      }
-    }
-      */
 };
 </script>
 
