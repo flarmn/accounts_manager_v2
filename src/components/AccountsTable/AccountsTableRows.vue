@@ -138,13 +138,6 @@ export default {
         .map((text) => ({ text: text.trim() }))
         .filter((obj) => obj.text !== "");
       emit("update-label", props.index, arr);
-      console.log(
-        "onLabelInput получил index =",
-        props.index,
-        typeof index,
-        "arr = ",
-        arr
-      );
     }
 
     function onTypeChange() {
@@ -164,12 +157,10 @@ export default {
       if (localType.value === "Локальная") {
         emit("validate-field", props.index, "password", localPassword.value);
         if (!fieldErrors.value.password) {
-          console.log("No errors", fieldErrors.value.password);
           fieldErrors.value.password = "";
           emit("update-field", props.index, "password", localPassword.value);
         } else {
           emit("validate-field", props.index, "password", localPassword.value);
-          console.log("Errorrs", fieldErrors.value.password);
         }
       }
     }
@@ -178,8 +169,7 @@ export default {
       emit("toggle-password", props.index);
     }
 
-    function onRemove(index) {
-      console.log("onRemove получил index =", props.index, typeof index);
+    function onRemove() {
       emit("remove", props.index);
     }
 

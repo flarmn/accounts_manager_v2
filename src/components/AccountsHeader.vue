@@ -9,7 +9,6 @@
 export default {
     setup(props, { emit }) {
         const handleClick = () => {
-            console.log("Local click");
             emit("add");
         }
         return {
