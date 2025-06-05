@@ -1,12 +1,12 @@
 <template>
-  <div class="accounts-form_table-header">
-    <div class="accounts-form_column-name_main-section">
-      <label class="accounts-form_column-name">Метка</label>
-      <label class="accounts-form_column-name">Тип записи</label>
+  <div class="accounts-form__table-header">
+    <div class="accounts-form__column-name__main-section">
+      <label class="accounts-form__column-name">Метка</label>
+      <label class="accounts-form__column-name">Тип записи</label>
     </div>
-    <div class="accounts-form_column-name_login-section">
-      <label class="accounts-form_column-name">Логин</label>
-      <label class="accounts-form_column-name">Пароль</label>
+    <div class="accounts-form__column-name__login-section,">
+      <label class="accounts-form__column-name">Логин</label>
+      <label class="accounts-form__column-name">Пароль</label>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.accounts-form_table-header {
+.accounts-form__table-header {
   display: flex;
   margin-top: 25px;
   align-items: center;
@@ -26,17 +26,17 @@ export default {
   column-gap: 20px;
 }
 
-.accounts-form_column-name_main-section,
-.account-card_cell_main,
-.accounts-form_column-name_login-section,
-.account-card_cell_login {
+.accounts-form__column-name__main-section,
+.account-card__cell-main,
+.accounts-form__column-name__login-section,
+.account-card__cell-login {
   display: flex;
   min-width: 55%;
   column-gap: 20px;
 }
 
-.accounts-form_column-name_main-section > .accounts-form_column-name,
-.accounts-form_column-name_login-section > .accounts-form_column-name {
+.accounts-form__column-name__main-section > .accounts-form__column-name,
+.accounts-form__column-name__login-section, > .accounts-form__column-name {
   width: 50%;
 }
 </style>

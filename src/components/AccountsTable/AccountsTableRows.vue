@@ -203,7 +203,6 @@ export default {
 .account-card__cell-login {
   display: flex;
   column-gap: 12px;
-  xxflex-grow: 1;
 }
 
 .account-card__cell-main {
@@ -212,13 +211,11 @@ export default {
 
 .account-card__cell-login {
   min-width: 40%;
-
   position: relative;
 }
 
 .account-card__field {
   position: relative;
-  xxflex-grow: 1;
   flex-shrink:1;
   width: 100%;
 }
