@@ -4,7 +4,7 @@
       <label class="accounts-form__column-name">Метка</label>
       <label class="accounts-form__column-name">Тип записи</label>
     </div>
-    <div class="accounts-form__column-name__login-section,">
+    <div class="accounts-form__column-name__login-section">
       <label class="accounts-form__column-name">Логин</label>
       <label class="accounts-form__column-name">Пароль</label>
     </div>
@@ -23,7 +23,7 @@ export default {
   margin-top: 25px;
   align-items: center;
   width: 100%;
-  column-gap: 20px;
+  column-gap: 15px;
 }
 
 .accounts-form__column-name__main-section,
@@ -31,12 +31,16 @@ export default {
 .accounts-form__column-name__login-section,
 .account-card__cell-login {
   display: flex;
-  min-width: 55%;
-  column-gap: 20px;
+  min-width: 41vw;
 }
 
-.accounts-form__column-name__main-section > .accounts-form__column-name,
-.accounts-form__column-name__login-section, > .accounts-form__column-name {
+.accounts-form__column-name__main-section > .accounts-form__column-name
+{
   width: 50%;
+
+}
+
+.accounts-form__column-name__login-section > .accounts-form__column-name {
+  width: 37%;
 }
 </style>
