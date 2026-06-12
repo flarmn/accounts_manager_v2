@@ -1,5 +1,7 @@
 # Accounts Manager
 
+![Main Page](screenshots/accounts_manager_screenshoot.png)
+
 Account management application built with Vue 3 and Composition API.
 
 The project was developed as a frontend technical assignment focused on dynamic form management, validation, state management and data persistence.
